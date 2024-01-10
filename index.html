@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Generator</title>
+    <title>Quote Generator RESTapi</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon-32x32.png">
     <!-- Font-Awesome -->
@@ -12,10 +12,36 @@
     <!-- Custom Styling -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <i class="fab fa-500px"></i>
+ 
+    <section>
+        
+        <div class="bckgrnd-overlay"></div>
+        <div class="bckgrnd">
+            <h1 class="title-text">RESTapi</h1>
+        </div>
+    </section>
+
+    <section class="card-canvas">
+        <div class="card">
+            <i class="fa-solid fa-quote-left"></i>
+                <div class="quote-cont">
+                    <h3 class="quote" id="quoteText">Click button below to generate a new Quote</h3>
+                   
+                </div> 
+                <small class="author" id="authorText">test</small>         
+            <i class="fa-solid fa-quote-right"></i>
+            <button class="generate-button" id="newQuoteBtn">Generate Quote</button>
+        </div>
+    </section>
+
+
     
     <!-- Script -->
     <script src="script.js"></script>        

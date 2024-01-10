@@ -3,6 +3,119 @@ html {
 }
 
 body {
+    font-family: 'Salsa', cursive;
+    font-size: 16px;
     margin: 0;
-    min-height: 100vh;    
+    min-height: 100vh; 
+    overflow: hidden;   
 }
+
+.title-text{
+    font-size: 2rem;
+    display:flex;
+    justify-content: center;
+}
+
+.bckgrnd {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('img/AdobeStock_263037263.jpeg');
+    background-size: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.bckgrnd-overlay{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 100vh;
+}
+
+.card-canvas {
+    box-sizing: border-box;
+    padding: 16px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 3;
+
+}
+
+.card {
+    position: relative;
+    border-radius: 10px 10px;;
+    width: 500px;
+    height: 700px;
+    background-color: rgb(219, 219, 219);
+    box-shadow: -11px -7px 29px 6px #e9e9ea;
+    z-index: 3; 
+}
+
+.generate-button {
+    height:50px;
+    position:absolute;
+    background-color: #4a4b4d;
+    top: 80%;
+    left: 30%;   
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#e8e8e8;
+	font-size:1.2rem;
+	padding:6px 24px;
+	text-decoration:none;
+    border: 1px solid white; 
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 29px 2px black;
+}
+
+.generate-button:hover {
+    box-shadow: 0px 0px 0px 0px black;
+    background-color: #e8e8e8;
+    color:black;
+}
+
+.fa-quote-left{
+    padding-left: 2rem;
+    font-size: 4rem;
+    color:rgba(0, 132, 255, 0.2);
+}
+
+.fa-quote-right{
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    font-size: 4rem;
+    color:rgba(0, 132, 255, 0.2);
+}
+
+.quote-cont {
+    height: 50%;
+    display:flex;
+    margin: auto;
+}
+
+.quote {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color:rgb(99, 99, 99);
+    margin: auto;
+}
+
+.author {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color:rgb(99, 99, 99);
+    margin: auto;
+
+}
+
