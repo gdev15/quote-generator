@@ -7,7 +7,7 @@ let apiData = [];
 
 // Get Quotes from API
 async function getData() {
-    const apiUrl = 'https://github.com/gdev15/quote-generator/blob/master/quotes.json';
+    const apiUrl = 'quotes.json';
 
     // Attempt to fetch if not catch error
     try {
